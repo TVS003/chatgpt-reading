@@ -107,6 +107,31 @@ h2 {
     border-top: 1px solid #ecf0f1;
 }
 
+/* Download button styles */
+.download-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+    background: linear-gradient(135deg, #2980b9 0%, #1f4e79 100%);
+}
+
+.presentation {
+    margin-top: 2rem;
+}
+
 /* Footer styles */
 footer {
     background-color: #2c3e50;
