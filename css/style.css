@@ -306,6 +306,693 @@ footer {
     }
 }
 
+/* Content page specific styles */
+.content-image {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.content-img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.content-img:hover {
+    transform: scale(1.02);
+}
+
+/* Multimedia page specific styles */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 2rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-description {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #2c3e50;
+}
+
+.video-note {
+    background: #e8f5e8;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #27ae60;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.presentation-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    align-items: start;
+}
+
+.presentation-image {
+    text-align: center;
+}
+
+.presentation-img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.presentation-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.presentation-list li {
+    background: white;
+    margin-bottom: 0.8rem;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 3px solid #27ae60;
+    position: relative;
+}
+
+.presentation-list li::before {
+    content: "✓";
+    color: #27ae60;
+    font-weight: bold;
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.presentation-list li {
+    padding-left: 2.5rem;
+}
+
+.tools-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.tools-table th {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tools-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ecf0f1;
+    vertical-align: top;
+}
+
+.tools-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.tools-table tr:hover {
+    background: #e3f2fd;
+}
+
+.reflection-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.cta-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+}
+
+/* Assessment page specific styles */
+.tool-section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.tool-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.tool-section p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.example-prompt {
+    background: #e8f5e8;
+    border-left: 4px solid #27ae60;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #2c3e50;
+    border-radius: 0 8px 8px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.form-container {
+    text-align: center;
+    margin: 2rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.form-container iframe {
+    max-width: 100%;
+    height: 900px;
+    border: none;
+}
+
+.form-description {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #2c3e50;
+}
+
+.assessment-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.assessment-table th {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.assessment-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ecf0f1;
+    vertical-align: top;
+}
+
+.assessment-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.assessment-table tr:hover {
+    background: #e3f2fd;
+}
+
+.integrity-list {
+    list-style: none;
+    padding: 0;
+}
+
+.integrity-list li {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid #e74c3c;
+}
+
+.integrity-list li strong {
+    color: #e74c3c;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Resources page specific styles */
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    background: white;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.resource-list li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.resource-list li a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.resource-list li p {
+    color: #7f8c8d;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.lesson-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ecf0f1;
+}
+
+.lesson-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.lesson-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.lesson-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.lesson-card:hover .lesson-img {
+    transform: scale(1.05);
+}
+
+.lesson-card h3 {
+    color: #2c3e50;
+    margin: 1.5rem 1.5rem 1rem 1.5rem;
+    font-size: 1.3rem;
+}
+
+.lesson-card p {
+    color: #7f8c8d;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.strategy {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.strategy h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.strategy p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.teacher-tip {
+    background: #e8f5e8;
+    border-left: 4px solid #27ae60;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #2c3e50;
+    border-radius: 0 8px 8px 0;
+}
+
+.ethics-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ethics-list li {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid #e74c3c;
+}
+
+.ethics-list li strong {
+    color: #e74c3c;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+.activities-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.activities-table th {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.activities-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ecf0f1;
+    vertical-align: top;
+}
+
+.activities-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.activities-table tr:hover {
+    background: #e3f2fd;
+}
+
+.image-credit {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-top: 0.5rem;
+}
+
+.image-credit a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.image-credit a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for content page */
+@media (max-width: 768px) {
+    .strategy {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .teacher-tip {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .ethics-list li {
+        padding: 1rem;
+    }
+    
+    .activities-table th,
+    .activities-table td {
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .content-img {
+        height: 200px;
+    }
+    
+    /* Multimedia page responsive adjustments */
+    .presentation-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .presentation-img {
+        height: 150px;
+    }
+    
+    .video-description {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .reflection-section {
+        padding: 1.5rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .tools-table th,
+    .tools-table td {
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Assessment page responsive adjustments */
+    .tool-section {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .example-prompt {
+        padding: 0.8rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .form-container iframe {
+        height: 600px;
+    }
+    
+    .form-description {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .assessment-table th,
+    .assessment-table td {
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .integrity-list li {
+        padding: 1rem;
+    }
+    
+    /* Resources page responsive adjustments */
+    .lesson-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .lesson-card h3 {
+        font-size: 1.2rem;
+        margin: 1rem 1rem 0.8rem 1rem;
+    }
+    
+    .lesson-card p {
+        font-size: 0.9rem;
+        margin: 0 1rem 1rem 1rem;
+    }
+    
+    .resource-list li {
+        padding: 1rem;
+    }
+    
+    .resource-list li a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .strategy h3 {
+        font-size: 1.2rem;
+    }
+    
+    .activities-table {
+        font-size: 0.8rem;
+    }
+    
+    .activities-table th,
+    .activities-table td {
+        padding: 0.6rem 0.4rem;
+    }
+    
+    /* Multimedia page mobile adjustments */
+    .presentation-img {
+        height: 120px;
+    }
+    
+    .video-description {
+        padding: 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    .reflection-section {
+        padding: 1rem;
+    }
+    
+    .cta-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .tools-table {
+        font-size: 0.8rem;
+    }
+    
+    .tools-table th,
+    .tools-table td {
+        padding: 0.6rem 0.4rem;
+    }
+    
+    .presentation-list li {
+        padding: 0.8rem 0.8rem 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Assessment page mobile adjustments */
+    .tool-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .example-prompt {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .form-container iframe {
+        height: 500px;
+    }
+    
+    .assessment-table {
+        font-size: 0.8rem;
+    }
+    
+    .assessment-table th,
+    .assessment-table td {
+        padding: 0.6rem 0.4rem;
+    }
+    
+    .integrity-list li {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Resources page mobile adjustments */
+    .lesson-card h3 {
+        font-size: 1.1rem;
+        margin: 0.8rem 0.8rem 0.6rem 0.8rem;
+    }
+    
+    .lesson-card p {
+        font-size: 0.85rem;
+        margin: 0 0.8rem 0.8rem 0.8rem;
+    }
+    
+    .lesson-image {
+        height: 150px;
+    }
+    
+    .resource-list li {
+        padding: 0.8rem;
+    }
+    
+    .resource-list li a {
+        font-size: 0.95rem;
+    }
+    
+    .resource-list li p {
+        font-size: 0.9rem;
+    }
+}
+
 /* Print styles */
 @media print {
     nav {
@@ -322,5 +1009,15 @@ footer {
         background: none;
         color: black;
         box-shadow: none;
+    }
+    
+    .strategy {
+        background: none;
+        border-left: 2px solid #333;
+    }
+    
+    .teacher-tip {
+        background: none;
+        border-left: 2px solid #333;
     }
 }
